@@ -43,3 +43,12 @@ nav {
 .active {
     color: #F57798;
 }
+
+.container {
+    background-color: #726CD0;
+}
+
+.intro-container {
+    width: 95%;
+    margin: 0 auto;
+}
