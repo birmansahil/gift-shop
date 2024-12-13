@@ -21,7 +21,7 @@ nav {
 }
 
 .logo {
-    color: #726CD0;
+    color: #A5A0ED;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
@@ -63,7 +63,37 @@ nav {
     width: 50%;
 }
 
+.intro-details p {
+    margin: 20px 0;
+}
+
 .intro-image img {
     width: 100%;
     object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 12px;
+    color: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+    color: #222;
+    background-color: #A5A0ED;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #F57798;
+}
+
+.present-btn {
+    margin-right: 15px;
 }
