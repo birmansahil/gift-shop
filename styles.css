@@ -10,6 +10,14 @@ body {
     line-height: 1.75;
 }
 
+.primary-highlight {
+    color: #A5A0ED;
+}
+
+.secondary-highlight {
+    color: #F57798;
+}
+
 nav {
     width: 95%;
     margin: 0 auto;
@@ -45,11 +53,11 @@ nav {
     color: #F57798;
 }
 
-.container {
+.intro-container {
     background-image: linear-gradient(45deg, #EDECFC, #D8D2F6);
 }
 
-.intro-container {
+.intro {
     width: 95%;
     margin: 0 auto;
     border: 2px solid red;
@@ -59,7 +67,7 @@ nav {
     flex-wrap: wrap;
 }
 
-.intro-container div {
+.intro div {
     width: 50%;
 }
 
@@ -96,4 +104,19 @@ nav {
 
 .present-btn {
     margin-right: 15px;
+}
+
+.features-container {
+    background: #fff;
+}
+
+.features {
+    width: 95%;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+.feature-cards-container {
+    display: flex;
+    justify-content: space-between;
 }
