@@ -4,119 +4,83 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-font-color: #222;
+    --secondary-font-color: #fff;
+    --primary-background-color: #fff;
+    --secondary-background-color: #E2E3FA;
+    --primary-btn-color: #968beb;
+}
+
 body {
-    color: #222;
+    color: var(--primary-font-color);
     font-family: sans-serif;
     line-height: 1.75;
 }
 
-.primary-highlight {
-    color: #A5A0ED;
+h1 {
+    font-size: 4.25rem;
 }
 
-.secondary-highlight {
-    color: #F57798;
+p {
+    font-size: 1.75rem;
 }
 
-nav {
-    width: 95%;
-    margin: 0 auto;
-    padding: 15px 0; 
-    border: 2px solid red;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    color: #A5A0ED;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.nav-list {
-    display: flex;
-}
-
-.nav-list-item {
-    list-style-type: none;
-}
-
-.nav-list-link {
-    margin-left: 25px;
-    color: inherit;
-    text-decoration: none;
-}
-
-.active {
-    color: #F57798;
-}
-
-.intro-container {
-    background-image: linear-gradient(45deg, #EDECFC, #D8D2F6);
-}
-
-.intro {
-    width: 95%;
-    margin: 0 auto;
-    border: 2px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.intro div {
-    width: 50%;
-}
-
-.intro-details p {
-    margin: 20px 0;
-}
-
-.intro-image img {
+img {
     width: 100%;
     object-fit: cover;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 25px;
-    text-decoration: none;
-    font-size: 12px;
+    padding: 0.75rem 2.5rem;
+    font-size: 1.25rem;
     color: inherit;
     font-weight: bold;
     text-transform: uppercase;
-    border-radius: 3px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .btn-primary {
-    color: #222;
-    background-color: #A5A0ED;
+    background-color: var(--primary-btn-color);
 }
 
-.btn-secondary {
-    color: #fff;
-    background-color: #F57798;
+.primary-highlighted-text {
+    color: #968beb;
 }
 
-.present-btn {
-    margin-right: 15px;
+.secondary-highlighted-text {
+    color: #F57798;
 }
 
-.features-container {
-    background: #fff;
+.intro-container {
+    background-color: var(--secondary-background-color);
 }
 
-.features {
+.intro {
+    border: 2px solid red;
     width: 95%;
     margin: 0 auto;
-    border: 2px solid red;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
 }
 
-.feature-cards-container {
-    display: flex;
-    justify-content: space-between;
+.intro-details p {
+    margin: 1rem 0 2.5rem;
+}
+
+/* Media Query */
+@media (min-width: 750px) {
+    .intro {
+        flex-direction: row;
+    }
 }
