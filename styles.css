@@ -14,7 +14,9 @@ html {
     --secondary-font-color: #fff;
     --primary-background-color: #fff;
     --secondary-background-color: #E2E3FA;
+    --tertiary-background-color: #968beb;
     --primary-btn-color: #968beb;
+
 }
 
 body {
@@ -25,6 +27,10 @@ body {
 
 h1 {
     font-size: 4.25rem;
+}
+
+h2 {
+    font-size: 2.75rem;
 }
 
 p {
@@ -59,6 +65,8 @@ img {
     color: #F57798;
 }
 
+/* Intro Section */
+
 .intro-container {
     background-color: var(--secondary-background-color);
 }
@@ -71,7 +79,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem;
+    gap: 5rem;
 }
 
 .intro-details p {
@@ -82,5 +90,35 @@ img {
 @media (min-width: 750px) {
     .intro {
         flex-direction: row;
+    }
+}
+
+/* Best sellers Section */
+.best-sellers-container {
+    background-color: var(--secondary-background-color);
+}
+
+.best-sellers {
+    border: 2px solid green;
+    width: 95%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.best-sellers-grid {
+    margin-top: 1rem;
+    border: 2px solid red;
+    display: grid;
+    gap: 5rem;
+}
+
+.best-seller-product {
+    background-color: var(--tertiary-background-color);
+    border-radius: 5px;
+}
+
+@media (min-width: 750px) {
+    .best-sellers-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
