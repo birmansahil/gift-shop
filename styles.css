@@ -246,3 +246,35 @@ img {
         flex-direction: row;
     }
 }
+
+/* App Section */
+.app-container {
+    background-color: var(--primary-background-color);
+}
+
+.app {
+    border: 2px solid red;
+    width: 95%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.app-image {
+    border-radius: 5px;
+    border: 2px solid green;
+    background-color: var(--tertiary-background-color);
+}
+
+.app-details img {
+    width: 250px;
+}
+
+@media (min-width: 750px) {
+    .app {
+        flex-direction: row;
+    }
+}
