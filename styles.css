@@ -214,3 +214,35 @@ img {
     font-size: 2rem;
     letter-spacing: 1.25rem;
 }
+
+/* Sale Section */
+.sale-container {
+    background-color: var(--secondary-background-color);
+}
+
+.sale {
+    border: 2px solid red;
+    width: 95%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.sale-details p {
+    margin: 1rem 0 2.5rem;
+}
+
+.sale-image {
+    border-radius: 5px;
+    border: 2px solid green;
+    background-color: var(--tertiary-background-color);
+}
+
+@media (min-width: 750px) {
+    .sale {
+        flex-direction: row;
+    }
+}
