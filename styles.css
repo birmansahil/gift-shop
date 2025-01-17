@@ -17,7 +17,6 @@ html {
     --secondary-background-color: #E2E3FA;
     --tertiary-background-color: #968beb;
     --primary-btn-color: #968beb;
-
 }
 
 body {
@@ -172,4 +171,46 @@ img {
     .best-sellers-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+/* Customer Comments Section */
+.customer-comments-container {
+    background-color: var(--primary-background-color);
+}
+
+.customer-comments {
+    border: 2px solid green;
+    width: 95%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.customer-comment {
+    position: relative;
+    margin: 2.5rem auto 0 auto;
+    max-width: 625px;
+    padding: 5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.customer-comment::before {
+    content: "\201C";
+    font-size: 10rem;
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    color: #F57798;
+}
+
+.customer-comment h3 {
+    margin: 1rem 0;
+    color: var(--tertiary-font-color);
+    font-weight: bold;
+}
+
+.customer-comment p:nth-child(3) {
+    font-size: 2rem;
+    letter-spacing: 1.25rem;
 }
