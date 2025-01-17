@@ -12,6 +12,7 @@ html {
 :root {
     --primary-font-color: #222;
     --secondary-font-color: #fff;
+    --tertiary-font-color: #968beb;
     --primary-background-color: #fff;
     --secondary-background-color: #E2E3FA;
     --tertiary-background-color: #968beb;
@@ -33,8 +34,12 @@ h2 {
     font-size: 2.75rem;
 }
 
+h3 {
+    font-size: 2.25rem;
+}
+
 p {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 img {
@@ -93,6 +98,52 @@ img {
     }
 }
 
+/* Features Section */
+.features-container {
+    background-color: var(--primary-background-color);
+}
+
+.features {
+    border: 2px solid magenta;
+    width: 95%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.features-grid {
+    margin-top: 2.5rem;
+    display: grid;
+    gap: 5rem;
+}
+
+.feature {
+    padding: 5rem 2.5rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.feature i {
+    color: var(--tertiary-font-color);
+    font-size: 3.25rem;
+}
+
+.feature h3 {
+    margin: 1rem 0;
+}
+
+@media (min-width: 625px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1275px) {
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 /* Best sellers Section */
 .best-sellers-container {
     background-color: var(--secondary-background-color);
@@ -106,7 +157,7 @@ img {
 }
 
 .best-sellers-grid {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     border: 2px solid red;
     display: grid;
     gap: 5rem;
