@@ -54,6 +54,8 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
+    outline: none;
+    border: none;
     border-radius: 5px;
 }
 
@@ -276,5 +278,39 @@ img {
 @media (min-width: 750px) {
     .app {
         flex-direction: row;
+    }
+}
+
+/* Newsletter Section */
+.newsletter-container {
+    background-color: var(--secondary-background-color);
+}
+
+.newsletter {
+    border: 2px solid green;
+    width: 95%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.signup {
+    margin-top: 2.5rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: var(--tertiary-background-color);
+}
+
+.signup p:nth-child(2) {
+    margin: 1rem 0;
+}
+
+@media (min-width: 750px) {
+    .signup {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
 }
