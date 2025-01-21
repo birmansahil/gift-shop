@@ -1,3 +1,4 @@
+/* General Styles */
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +10,13 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    color: var(--primary-font-color);
+    font-family: "Roboto", serif;
+    line-height: 1.75;
+}
+
+/* Theme */
 :root {
     --primary-font-color: #222;
     --secondary-font-color: #fff;
@@ -19,31 +27,26 @@ html {
     --primary-btn-color: #968beb;
 }
 
-body {
-    color: var(--primary-font-color);
-    font-family: sans-serif;
-    line-height: 1.75;
-}
-
+/* Typography */
 h1 {
-    font-size: 4.25rem;
+    font-size: 5rem;
 }
 
 h2 {
-    font-size: 2.75rem;
+    font-size: 3.5rem;
 }
 
 h3 {
-    font-size: 2.25rem;
+    font-size: 2.75rem;
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 a {
     color: inherit;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 img {
@@ -51,9 +54,12 @@ img {
     object-fit: cover;
 }
 
+/* Reusable Style Components */
 .logo {
     color: var(--tertiary-font-color);
-    font-size: 2.75rem;
+    font-size: 3.25rem;
+    font-family: "Caveat", serif;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -177,11 +183,15 @@ main {
     margin-top: 7rem;
 }
 
-/* Intro Section */
-.intro-container {
+section:nth-child(even) {
+    background-color: var(--primary-background-color);
+}
+
+section:nth-child(odd) {
     background-color: var(--secondary-background-color);
 }
 
+/* Intro Section */
 .intro {
     border: 2px solid red;
     width: 95%;
@@ -205,10 +215,6 @@ main {
 }
 
 /* Features Section */
-.features-container {
-    background-color: var(--primary-background-color);
-}
-
 .features {
     border: 2px solid magenta;
     width: 95%;
@@ -251,10 +257,6 @@ main {
 }
 
 /* Best sellers Section */
-.best-sellers-container {
-    background-color: var(--secondary-background-color);
-}
-
 .best-sellers {
     border: 2px solid green;
     width: 95%;
@@ -281,10 +283,6 @@ main {
 }
 
 /* Customer Comments Section */
-.customer-comments-container {
-    background-color: var(--primary-background-color);
-}
-
 .customer-comments {
     border: 2px solid green;
     width: 95%;
@@ -323,10 +321,6 @@ main {
 }
 
 /* Sale Section */
-.sale-container {
-    background-color: var(--secondary-background-color);
-}
-
 .sale {
     border: 2px solid red;
     width: 95%;
@@ -355,10 +349,6 @@ main {
 }
 
 /* App Section */
-.app-container {
-    background-color: var(--primary-background-color);
-}
-
 .app {
     border: 2px solid red;
     width: 95%;
@@ -387,10 +377,6 @@ main {
 }
 
 /* Newsletter Section */
-.newsletter-container {
-    background-color: var(--secondary-background-color);
-}
-
 .newsletter {
     border: 2px solid green;
     width: 95%;
