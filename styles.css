@@ -11,6 +11,9 @@ html {
 }
 
 body {
+    min-width: 375px;
+    max-width: 1440px;
+    margin: 0 auto;
     color: var(--primary-font-color);
     font-family: "Roboto", serif;
     line-height: 1.75;
@@ -22,9 +25,9 @@ body {
     --secondary-font-color: #fff;
     --tertiary-font-color: #968beb;
     --primary-background-color: #fff;
-    --secondary-background-color: #E2E3FA;
-    --tertiary-background-color: #968beb;
-    --primary-btn-color: #968beb;
+    --secondary-background-color: #968beb;
+    --primary-gradient-background: linear-gradient(-45deg, #e2e3fa 0%, #c2c1f4 100%);
+    --secondary-gradient-background: linear-gradient(45deg, #e2e3fa 0%, #968beb 100%);
 }
 
 /* Typography */
@@ -77,7 +80,7 @@ img {
 }
 
 .btn-primary {
-    background-color: var(--primary-btn-color);
+    background-color: var(--secondary-background-color);
 }
 
 .primary-highlighted-text {
@@ -90,6 +93,8 @@ img {
 
 /* Header */
 header {
+    min-width: inherit;
+    max-width: inherit;
     position: fixed;
     top: 0;
     width: 100%;
@@ -146,7 +151,8 @@ header {
     width: 25px;
     height: 3.5px;
     margin: 5px;
-    background-color: var(--tertiary-background-color);
+    border-radius: 5px;
+    background-color: var(--secondary-background-color);
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -179,20 +185,15 @@ header {
     }
 }
 
-main {
-    margin-top: 7rem;
-}
-
 section:nth-child(even) {
-    background-color: var(--primary-background-color);
+    background: var(--primary-background-color);
 }
 
 section:nth-child(odd) {
-    background-color: var(--secondary-background-color);
+    background: var(--primary-gradient-background);
 }
 
 .container {
-    border: 2px solid red;
     width: 90%;
     margin: 0 auto;
     padding: 5rem 0;
@@ -200,6 +201,7 @@ section:nth-child(odd) {
 
 /* Intro */
 .intro-container {
+    padding: 12.5rem 0 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,9 +212,13 @@ section:nth-child(odd) {
     margin: 1rem 0 2.5rem;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 825px) {
     .intro-container {
         flex-direction: row;
+    }
+
+    .intro-container div {
+        width: 50%;
     }
 }
 
@@ -254,17 +260,16 @@ section:nth-child(odd) {
 /* Best sellers */
 .best-sellers-grid {
     margin-top: 2.5rem;
-    border: 2px solid red;
     display: grid;
     gap: 5rem;
 }
 
 .best-seller-product {
-    background-color: var(--tertiary-background-color);
+    background: var(--secondary-gradient-background);
     border-radius: 5px;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 825px) {
     .best-sellers-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -318,11 +323,10 @@ section:nth-child(odd) {
 
 .sale-image {
     border-radius: 5px;
-    border: 2px solid green;
-    background-color: var(--tertiary-background-color);
+    background: var(--secondary-gradient-background);
 }
 
-@media (min-width: 750px) {
+@media (min-width: 825px) {
     .sale-container {
         flex-direction: row;
     }
@@ -338,15 +342,18 @@ section:nth-child(odd) {
 
 .app-image {
     border-radius: 5px;
-    border: 2px solid green;
-    background-color: var(--tertiary-background-color);
+    background: var(--secondary-gradient-background);
 }
 
 .app-details img {
     width: 250px;
 }
 
-@media (min-width: 750px) {
+.app-details h3:last-of-type {
+    margin: 1rem 0 2.5rem;
+}
+
+@media (min-width: 825px) {
     .app-container {
         flex-direction: row;
     }
@@ -363,14 +370,14 @@ section:nth-child(odd) {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    background-color: var(--tertiary-background-color);
+    background: var(--secondary-gradient-background);
 }
 
 .signup p:nth-child(2) {
     margin: 1rem 0;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 825px) {
     .signup {
         flex-direction: row;
         justify-content: space-around;
@@ -380,7 +387,6 @@ section:nth-child(odd) {
 
 /* Footer */
 footer {
-    border: 2px solid green;
     width: 90%;
     margin: 0 auto;
     padding: 5rem 0;
