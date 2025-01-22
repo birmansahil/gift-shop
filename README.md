@@ -14,7 +14,7 @@ This project is a fully responsive webpage, ensuring a seamless experience acros
 
 - CSS Flexbox and Grid: Improved my understanding of building responsive layouts.
 - Responsive Design Principles: Learned how to make a webpage adapt to different screen sizes using media queries.
-- Semantic HTML: Used appropriate tags like <section>, <header>, and <footer> to improve structure and accessibility.
+- Semantic HTML: Used appropriate tags like section, header, and footer to improve structure and accessibility.
 - CSS Variables: Simplified theme management by using variables for colors and fonts.
 
 ## Challenges Faced
