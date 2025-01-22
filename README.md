@@ -1,6 +1,6 @@
 # Gift Shop Webpage
 
-This project is a fully responsive webpage, ensuring a seamless experience across devices. for a fictional gift shop, My Valentine. It showcases products, features, and offers an intuitive design that enhances the user experience. The webpage has been coded by me, but the design was created by Kat Edwards.
+This project is a fully responsive webpage for a fictional Valentine Gift Shop website! This project showcases products, features, and offers an intuitive responsive design that enhances the user experience. The webpage has been coded by me, but the design was created by Kat Edwards.
 
 ## Technologies Used
 
