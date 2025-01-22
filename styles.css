@@ -99,7 +99,7 @@ header {
 }
 
 .navbar {
-    width: 95%;
+    width: 90%;
     margin: 1rem auto;
     display: flex;
     justify-content: space-between;
@@ -191,12 +191,15 @@ section:nth-child(odd) {
     background-color: var(--secondary-background-color);
 }
 
-/* Intro Section */
-.intro {
+.container {
     border: 2px solid red;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     padding: 5rem 0;
+}
+
+/* Intro */
+.intro-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,21 +210,13 @@ section:nth-child(odd) {
     margin: 1rem 0 2.5rem;
 }
 
-/* Media Query */
 @media (min-width: 750px) {
-    .intro {
+    .intro-container {
         flex-direction: row;
     }
 }
 
-/* Features Section */
-.features {
-    border: 2px solid magenta;
-    width: 95%;
-    margin: 0 auto;
-    padding: 5rem 0;
-}
-
+/* Features */
 .features-grid {
     margin-top: 2.5rem;
     display: grid;
@@ -256,14 +251,7 @@ section:nth-child(odd) {
     }
 }
 
-/* Best sellers Section */
-.best-sellers {
-    border: 2px solid green;
-    width: 95%;
-    margin: 0 auto;
-    padding: 5rem 0;
-}
-
+/* Best sellers */
 .best-sellers-grid {
     margin-top: 2.5rem;
     border: 2px solid red;
@@ -282,12 +270,8 @@ section:nth-child(odd) {
     }
 }
 
-/* Customer Comments Section */
-.customer-comments {
-    border: 2px solid green;
-    width: 95%;
-    margin: 0 auto;
-    padding: 5rem 0;
+/* Customer Comments */
+.customer-comments-container {
     text-align: center;
 }
 
@@ -320,12 +304,8 @@ section:nth-child(odd) {
     letter-spacing: 1.25rem;
 }
 
-/* Sale Section */
-.sale {
-    border: 2px solid red;
-    width: 95%;
-    margin: 0 auto;
-    padding: 5rem 0;
+/* Sale */
+.sale-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -343,17 +323,13 @@ section:nth-child(odd) {
 }
 
 @media (min-width: 750px) {
-    .sale {
+    .sale-container {
         flex-direction: row;
     }
 }
 
-/* App Section */
-.app {
-    border: 2px solid red;
-    width: 95%;
-    margin: 0 auto;
-    padding: 5rem 0;
+/* App */
+.app-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -371,17 +347,13 @@ section:nth-child(odd) {
 }
 
 @media (min-width: 750px) {
-    .app {
+    .app-container {
         flex-direction: row;
     }
 }
 
 /* Newsletter Section */
-.newsletter {
-    border: 2px solid green;
-    width: 95%;
-    margin: 0 auto;
-    padding: 5rem 0;
+.newsletter-container {
     text-align: center;
 }
 
@@ -409,7 +381,7 @@ section:nth-child(odd) {
 /* Footer */
 footer {
     border: 2px solid green;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     padding: 5rem 0;
 }
